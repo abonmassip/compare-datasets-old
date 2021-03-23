@@ -1,0 +1,172 @@
+body, html {
+  background: #c2c9d6;
+  margin: 0;
+  font-family: monospace;
+}
+
+#shortcuts {
+  background: rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  padding: .4rem;
+  box-shadow: 3px 8px 6px -6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+#shortcuts p {
+  margin: 0;
+}
+
+#shortcuts .hl {
+  font-weight: bold;
+}
+
+#settings {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+}
+
+#settings button {
+  border-radius: 100px;
+  /* border: none; */
+  width: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#content {
+  margin: 2rem;
+}
+
+.list {
+  display: flex;
+}
+
+.list [data-type="title"] {
+  min-width: 0;
+  flex-basis: 25%;
+  padding: 0.5rem;
+}
+
+.list textarea {
+  margin: 0;
+  height: 4rem;
+  min-width: 0;
+  flex-basis: 55%;
+  resize: none;
+  padding: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+.list [data-type="values"] {
+  min-width: 0;
+  flex-basis: 10%;
+  text-align: center;
+}
+
+.list button {
+  flex-basis: 10%;
+  text-transform: uppercase;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#submit button {
+  height: 3rem;
+  width: 150px;
+  border-radius: 100px;
+}
+
+#clear-results {
+  display: flex;
+  justify-content: center;
+}
+
+#clear-results button {
+  text-transform: uppercase;
+  font-size: 11px;
+  height: 2rem;
+  width: 120px;
+  border-radius: 100px;
+}
+
+button {
+  cursor: pointer;
+  transition: .2s background-color;
+  border: 1px solid gray;
+}
+
+button:hover {
+  background-color: rgb(194, 203, 218);
+}
+
+.result {
+  display: flex;
+}
+
+.result * {
+  background: white;
+  margin: 0;
+}
+
+.result .result-title {
+  flex-basis: 25%;
+  padding: .5rem;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.result .result-title strong {
+  word-break: break-all;
+}
+
+.result .result-list {
+  flex-basis: 55%;
+  border: 1px solid gray;
+  padding: .2rem;
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+.result [data-type="values"] {
+  min-width: 0;
+  flex-basis: 10%;
+  text-align: center;
+}
+
+.result button {
+  flex-basis: 10%;
+}
+
+.copy-results {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5rem 0;
+}
+
+.copy-results button {
+  margin: 0;
+  padding: .5rem;
+  width: 9.8%;
+  text-transform: uppercase;  /* border-radius: 100px; */
+}
+
+.testwrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.test {
+  background: rgb(54, 54, 54);
+  color: rgb(255, 208, 0);
+  width: 50%;
+  padding: 2rem;
+  font-family: monospace;
+}
